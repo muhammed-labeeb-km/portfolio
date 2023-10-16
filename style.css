@@ -161,12 +161,13 @@ body{
     .myName{
         font-size: 17vw;
         left: 7%;
-        top: 180px;
+        top: 24%;
     } 
     .myPic{
         width: 75%;
-        margin-left: 60%;
-        margin-top: 24% !important;
+        margin-left: 40%;
+        margin-top: 44% !important;
+        transform: scale(1.01);
     }  
     
     #projects{
@@ -209,11 +210,14 @@ body{
     }
     #aboutme{
         transform: scale(.7);
-        margin-top: -220px;
+        margin-top: -320px !important;
     }
     
     #contact{
         margin-top: -60px !important;
+    }
+    .navvy{
+
     }
     
     .requestButton{
@@ -223,9 +227,27 @@ body{
     
 }
 
-/* @media screen and (max-width: 1000) {
-
-} */
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    /* .navvy{
+        background-color: transparent;
+    } */
+    .myPic{
+        margin-left: 25% !important;
+        margin-top: -1%;
+        width: 140% !important;
+    }
+    .myName{
+        top: 30% !important;
+        font-size: 15vw !important;
+        left: 10%;
+    }
+    #aboutme{
+        /* margin-left:15% !important; */
+    }
+    .contactMeText{
+        font-size: 9vw;
+    }
+}
 
 .circle {
     width: 99%; 
