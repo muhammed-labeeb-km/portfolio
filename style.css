@@ -1,0 +1,433 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.removeBorder{
+    border: none !important;
+    box-shadow: none !important;
+    color: gold !important;
+}
+
+
+.navvy{
+    background-color: #bebdbd;
+}
+
+
+.myName{
+    font-size: 9vw;
+    font-weight: 700;
+    /* text-align: left; */
+    top: 20%;
+    left: 33%;
+    font-family: 'Caveat', cursive;
+    position: absolute;
+}
+.gradient1 {
+    /* background: linear-gradient(to right, #bbb6b6, #eed8d8); */
+    -webkit-background-clip: text;
+    color: rgb(182, 179, 179);
+    -webkit-text-stroke: 1px rgb(0, 0, 0); 
+   
+}
+
+.nav-link{
+    color: white !important;
+    cursor: pointer;
+    
+}
+.homeText{
+    font-weight: 800;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-left: 20px;
+    /* -webkit-text-stroke: .2px black; */
+}
+
+.projectText,.contactText,.aboutText{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    /* -webkit-text-stroke: .2px black; */
+}
+
+.nav-link:hover{
+    transform: scale(1.2);
+    color: gold !important;
+}
+
+.myPic{
+    transform: scale(.7);
+    margin-top: 27%;
+    border: 4px solid gold;
+    /* position: absolute; */
+    /* border: solid goldenrod; */
+}
+.fRow{
+    display: flex;
+    justify-content: right;
+    margin-right: 20%;
+}
+.section-padding{
+    padding-top: 20px;
+    /* padding-bottom: 120px; */
+}
+.prh{
+    background-color: white !important;
+}
+
+.prj{
+    font-family: 'Caveat', cursive;
+    font-size: 80px !important;
+}
+
+.aide{
+    border:solid goldenrod !important;
+}
+
+.aide:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.AideATraderHeading{
+    color: rgba(24,62,104,255) !important;
+}
+
+
+.image-container img {
+    filter:brightness(50%); 
+    transition: filter 1s; 
+  }
+  
+  .image-container:hover img {
+    filter: brightness(100%); 
+    transition: filter 1s; 
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+
+  .btn1{
+    background: linear-gradient(to right, #09315e, #2b4e75, #09315e);
+    color: white;
+    /* border: none; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: none !important;
+}
+
+.btn1:hover{
+    background: linear-gradient(to right, #2b4e75, #09315e, #2b4e75);
+}
+
+
+
+.btn2 {
+    background: linear-gradient(to right, #1c1c1c, #646464, #1c1c1c);
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn2:hover {
+    background: linear-gradient(to right, #646464, #1c1c1c, #646464);
+}
+
+.btn3 {
+    background: linear-gradient(to right, #570b0b, #851414, #570b0b);
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn3:hover {
+    background: linear-gradient(to right, #851414, #570b0b, #851414);
+}
+
+@media screen and (max-width: 499px) {
+    .myName{
+        font-size: 17vw;
+        left: 7%;
+        top: 180px;
+    } 
+    .myPic{
+        width: 75%;
+        margin-left: 60%;
+        margin-top: 24% !important;
+    }  
+    
+    
+
+    .prj{
+        font-size: 50px !important;
+    }
+    .prh{
+        padding-top: 30px !important;
+        margin-bottom: 30px;
+    }
+    .aide{
+        transform: scale(.8);
+        margin-top: -20px !important;
+    }
+
+
+    .circle{
+        width: 300px;
+        height: 300px;
+    }
+
+    .contactMeText{
+        font-size: 10vw;
+    }
+    .skyDiv,.reserve,.linky{
+        transform: scale(.7);
+    }
+    #aboutme{
+        transform: scale(.7);
+    }
+    .workTogether{
+        margin-top: -20px !important;
+    }
+    
+    
+}
+
+/* @media screen and (max-width: 1000) {
+
+} */
+
+.circle {
+    width: 99%; 
+    height: 100%; 
+    background: radial-gradient( gold 0%,goldenrod 100%); 
+}
+
+#aboutme{
+    background-color: whitesmoke !important;
+}
+
+.aboutMeText{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+.me2{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.aboutMeDiv{
+    background-color: white;
+}
+.profile{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+@keyframes cBackground {
+    0% {
+      background-color: orange; 
+    }
+    7% {
+      background-color: orange;
+    }
+    9% {
+      background-color: orange; 
+    }
+  }
+
+@keyframes myNameBackground {
+    0% {
+      background-color: gold; 
+    }
+    1% {
+      background-color: gold; 
+    }
+    3% {
+      background-color: gold;
+    }
+  }
+
+@keyframes pythonBackground {
+    0% {
+      background-color: lightblue;
+    }
+    3% {
+      background-color: lightblue; 
+    }
+    5% {
+      background-color: lightblue;
+    }
+  }
+  
+  @keyframes jsBackground {
+    0% {
+      background-color: pink; 
+    }
+    5% {
+      background-color: pink;
+    }
+    7% {
+      background-color: pink; 
+    }
+  }
+  
+  @keyframes reactBackground {
+    0% {
+      background-color: lightgreen; 
+    }
+    7% {
+      background-color: lightgreen;
+    }
+    9% {
+      background-color: lightgreen; 
+    }
+  }
+
+  @keyframes continuousLearningBackground {
+    0% {
+        background-color: lightyellow; 
+    }
+    9% {
+        background-color: lightyellow; 
+    }
+    11% {
+        background-color: lightyellow; 
+    }
+}
+
+@keyframes adaptabilityBackground {
+    0% {
+        background-color: lightseagreen;
+    }
+    11% {
+        background-color: lightseagreen; 
+    }
+    13% {
+        background-color: lightseagreen; 
+    }
+}
+
+@keyframes idealCandidateBackground {
+    0% {
+        background-color: lightsalmon; 
+    }
+    15% {
+        background-color: lightsalmon;
+    }
+}
+  
+  .myNameis {
+    animation: myNameBackground 17s linear infinite;
+    animation-delay: 1s; 
+  }
+  
+  .python {
+    animation: pythonBackground 17s linear infinite;
+    animation-delay: 3s;
+  }
+  
+  .javascript {
+    animation: jsBackground 17s linear infinite;
+    animation-delay: 5s;
+  }
+  
+  .c {
+    animation: cBackground 17s linear infinite;
+    animation-delay: 9s;
+  }
+  .react {
+    animation: reactBackground 17s linear infinite;
+    animation-delay: 7s;
+  }
+
+  .continuousLearning {
+    animation: continuousLearningBackground 17s linear infinite;
+    animation-delay: 11s;
+}
+
+.adaptability {
+    animation: adaptabilityBackground 17s linear infinite;
+    animation-delay: 13s;
+}
+
+.idealCandidate {
+    animation: idealCandidateBackground 12s linear infinite;
+    animation-delay: 15s;
+}
+
+
+
+ .contactmeDiv{
+    background-color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 3vw;
+ }
+ 
+
+ .skyDiv{
+    width: 100%;
+    height: 400px !important;
+    filter: brightness(70%);
+    border-radius: 15px !important;
+ }
+
+ .skyImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px !important;
+    
+ }
+ .skyDiv:hover{
+    filter: brightness(100%);
+ }
+
+ .workTogether{
+    font-size: 56px !important;
+    font-family: 'Hind Siliguri', sans-serif;
+ }
+
+ .requestButton{
+    background-color: transparent !important;
+    border: none !important;
+    /* outline: none; */
+    font-size: 20px !important;
+ }
+ .requestButton:hover{
+    background-color: rgb(255, 255, 255, 0.2) !important;
+ }
+
+ .myMail{
+    text-decoration: none !important;
+    
+ }
+
+ .logos{
+    color: rgb(135, 133, 133);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    filter: brightness(80%);
+ }
+ .logos:hover{
+    /* background-color: rgb(255, 255, 255,0.3); */
+    transform: scale(1.2);
+    filter: brightness(150%);
+ }
+ .reserve{
+    
+    color: rgb(174, 173, 173);
+ }
