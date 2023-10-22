@@ -9,20 +9,61 @@ body{
     color: gold !important;
 }
 
+.infos{
+    margin-top: 130px !important;
+}
+
+
+
+.webDev{
+    
+    font-size: 2vw;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 800;
+    /* color: transparent; */
+    -webkit-background-clip: text;
+    color: rgb(232, 230, 230);
+    -webkit-text-stroke: 1px rgb(78, 78, 78); 
+}
+
+#text-container {
+    margin-top: 40px;
+    /* font-family: Arial, sans-serif; */
+    /* font-size: 24px; */
+    color: rgb(142, 140, 135);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-animation 5s steps(100, end);
+}
+
+@keyframes typing-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.webDefinition{
+    margin-top: 50px !important;
+}
+
 
 .navvy{
-    background-color: #bebdbd;
+    background-color: rgb(190,189,189,.9);
 }
 
 
 .myName{
     font-size: 9vw;
     font-weight: 700;
+    margin-top: 10vh;
+    padding: 0 !important;
     /* text-align: left; */
-    top: 20%;
-    left: 33%;
     font-family: 'Caveat', cursive;
-    position: absolute;
+    /* position: absolute; */
 }
 .gradient1 {
     /* background: linear-gradient(to right, #bbb6b6, #eed8d8); */
@@ -39,7 +80,7 @@ body{
 }
 .homeText{
     font-weight: 800;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Caveat', cursive;
     margin-left: 20px;
     /* -webkit-text-stroke: .2px black; */
@@ -48,7 +89,7 @@ body{
 .projectText,.contactText,.aboutText{
     margin-left: 20px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Caveat', cursive;
     /* -webkit-text-stroke: .2px black; */
 }
@@ -65,11 +106,7 @@ body{
     /* position: absolute; */
     /* border: solid goldenrod; */
 }
-.fRow{
-    display: flex;
-    justify-content: right;
-    margin-right: 20%;
-}
+
 .section-padding{
     padding-top: 20px;
     /* padding-bottom: 120px; */
@@ -80,15 +117,21 @@ body{
 
 .prj{
     font-family: 'Caveat', cursive;
-    font-size: 80px !important;
+    font-size: 3vw !important;
+}
+#projects{
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    /* transform: scale(.7); */
+    margin-top: -200px;
 }
 
 .aide{
     border:solid goldenrod !important;
+    transform: scale(.7);
 }
 
 .aide:hover{
-    transform: scale(1.04);
+    transform: scale(.73);
     cursor: pointer;
 }
 .AideATraderHeading{
@@ -158,7 +201,7 @@ body{
 }
 
 @media screen and (max-width: 499px) {
-    .myName{
+    /* .myName{
         font-size: 17vw;
         left: 7%;
         top: 24%;
@@ -168,26 +211,45 @@ body{
         margin-left: 40%;
         margin-top: 44% !important;
         transform: scale(1.01);
-    }  
+    }   */
+
+    /* .homeText,.aboutText,.projectText,.Contact{
+
+    } */
+
+    .myName{
+        margin-top: 100px !important;
+        font-size: 16vw;
+    }
+    .infos{
+        display: none;
+    }
+
+    .contactmeDiv{
+        margin-top: 20px !important;
+        margin-bottom: 20px;
+    }
+    .aboutMeText{
+        margin-top: 5px !important;
+    }
     
     #projects{
         margin-top: -130px;
     }
     .c1{
         margin-top: -30px !important;
+        /* transform: scale(1.2) !important; */
     }
 
     .c2{
         margin-top: -50px !important;
+        /* transform: scale(1.2) !important; */
     }
 
-    .prj{
-        font-size: 40px !important;
-    }
     .prh{
-        padding-top: 30px !important;
-        margin-bottom: 30px;
+        margin-top: -130px;
     }
+    
     .aide{
         transform: scale(.8);
         margin-top: -20px !important;
@@ -198,32 +260,32 @@ body{
     }
 
     .circle{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
-    .contactMeText{
-        font-size: 10vw;
+    .contactMeText,.aboutMeText,.prj{
+        font-size: 5vw !important;
     }
     .skyDiv,.reserve,.linky{
         transform: scale(.7);
     }
     #aboutme{
         transform: scale(.7);
-        margin-top: -320px !important;
+        margin-top: -100px !important;
     }
     
     #contact{
-        margin-top: -60px !important;
-    }
-    .navvy{
-
+        margin-top: -10px !important;
+        transform: scale(1) !important;
     }
     
     .requestButton{
-        margin-top: -20px !important;
+        margin-top: 5px !important;
     }
-    
+    .workTogether{
+        size: 45px !important;
+    }
     
 }
 
@@ -231,22 +293,70 @@ body{
     /* .navvy{
         background-color: transparent;
     } */
-    .myPic{
+    /* .myPic{
         margin-left: 25% !important;
-        margin-top: -1%;
+        margin-top: %;
         width: 140% !important;
+    } */
+    .c1,.c2{
+        transform: scale(.7);
     }
-    .myName{
-        top: 30% !important;
-        font-size: 15vw !important;
-        left: 10%;
+    .c1{
+        margin-top: -100px !important;
+    }
+    .c2{
+        margin-top: -150px !important;
     }
     #aboutme{
-        /* margin-left:15% !important; */
+        margin-top: -170px;
+        transform: scale(.55) !important;
+    }
+    .aboutMeText{
+        font-size: 4vw !important;
+    }
+    .myName{
+        /* top: 30% !important; */
+        font-size: 13vw !important;
+        margin-top: 50px !important;
+        /* left: 10%; */
+    }
+    .prh{
+        margin-top: -200px !important;
+    }
+    .prj{
+        font-size: 4vw !important;
+    }
+
+    #projects{
+        margin-top: -290px !important;
+    }
+    .contactmeDiv{
+        margin-top: 30px !important;
     }
     .contactMeText{
-        font-size: 9vw;
+        font-size: 4vw;
     }
+    .reserve{
+        /* background-color: #570b0b; */
+        font-size: 2vw;
+    }
+    .linky{
+        margin-top: -10px;
+    }
+    .logos{
+        font-size: 2vw !important;
+    }
+    .skyDiv{
+        transform: scale(.8);
+
+    }
+    .requestButton{
+        margin-top: 40px;
+    }
+    .infos{
+        display: none;
+    }
+    
 }
 
 .circle {
@@ -257,11 +367,12 @@ body{
 
 #aboutme{
     background-color: whitesmoke !important;
+    transform: scale(.7);
 }
 
 .aboutMeText{
     font-family: 'Caveat', cursive;
-    font-size: 50px;
+    font-size: 3vw;
 }
 .me2{
     width: 100%;
@@ -271,6 +382,7 @@ body{
 }
 .aboutMeDiv{
     background-color: white;
+    margin-bottom:-30px ;
 }
 .profile{
     font-family: 'Dancing Script', cursive;
@@ -409,11 +521,18 @@ body{
     animation-delay: 15s;
 }
 
-
+#contact{
+    /* ------------------------------------------------------------------------------------------------------ */
+    /* transform: scale(.7); */
+}
 
  .contactmeDiv{
     background-color: white;
     font-family: 'Caveat', cursive;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+ }
+ .contactMeText{
     font-size: 3vw;
  }
  
@@ -443,6 +562,7 @@ body{
  .requestButton{
     background-color: transparent !important;
     border: none !important;
+    margin-top: 30px;
     /* outline: none; */
     font-size: 20px !important;
  }
@@ -468,6 +588,16 @@ body{
     filter: brightness(150%);
  }
  .reserve{
-    
+    transform: scale(.8);
     color: rgb(174, 173, 173);
+ }
+ .linky{
+    transform: scale(.8);
+ }
+
+ /* .c1,.c2{
+    
+ } */
+ .c2{
+    margin-top: -100px !important;
  }
